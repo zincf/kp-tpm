@@ -1,0 +1,42 @@
+﻿!Sample_title,THP1_control1_RNA_seq,THP1_control2_RNA_seq,THP1_PMA1_RNA_seq,THP1_PMA2_RNA_seq
+!Sample_geo_accession,GSM4552489,GSM4552490,GSM4552491,GSM4552492
+!Sample_status,Public on Feb 01 2021,Public on Feb 01 2021,Public on Feb 01 2021,Public on Feb 01 2021
+!Sample_submission_date,May 14 2020,May 14 2020,May 14 2020,May 14 2020
+!Sample_last_update_date,Feb 01 2021,Feb 01 2021,Feb 01 2021,Feb 01 2021
+!Sample_type,SRA,SRA,SRA,SRA
+!Sample_channel_count,1,1,1,1
+!Sample_source_name_ch1,THP1 cells,THP1 cells,THP1 cells,THP1 cells
+!Sample_organism_ch1,Homo sapiens,Homo sapiens,Homo sapiens,Homo sapiens
+!Sample_characteristics_ch1,cell type: human monocytic,cell type: human monocytic,cell type: human monocytic,cell type: human monocytic
+!Sample_characteristics_ch1-response,cell line: THP-1,cell line: THP-1,cell line: THP-1,cell line: THP-1
+!Sample_characteristics_ch1-cell_type,treatment: untreated,treatment: untreated,treatment: PMA,treatment: PMA
+!Sample_treatment_protocol_ch1,"For differentiation of THP-1 cells, cells were treated with PMA to a final concentration of 100 nM for 24h .","For differentiation of THP-1 cells, cells were treated with PMA to a final concentration of 100 nM for 24h .","For differentiation of THP-1 cells, cells were treated with PMA to a final concentration of 100 nM for 24h .","For differentiation of THP-1 cells, cells were treated with PMA to a final concentration of 100 nM for 24h ."
+!Sample_growth_protocol_ch1,THP-1 cells were cultured in complete RPMI 1640 media + 10% FCS + pen/strep cocktail (1%) + 0.05 mM betamercaptoethanol,THP-1 cells were cultured in complete RPMI 1640 media + 10% FCS + pen/strep cocktail (1%) + 0.05 mM betamercaptoethanol,THP-1 cells were cultured in complete RPMI 1640 media + 10% FCS + pen/strep cocktail (1%) + 0.05 mM betamercaptoethanol,THP-1 cells were cultured in complete RPMI 1640 media + 10% FCS + pen/strep cocktail (1%) + 0.05 mM betamercaptoethanol
+!Sample_molecule_ch1,total RNA,total RNA,total RNA,total RNA
+!Sample_extract_protocol_ch1,Total RNA was purified from -/+ PMA-treated THP-1 cells using Direct-zol RNA MiniPrep Kit (Zymo Research) and TRIzol reagent (Ambion) according to the manufacturer‚Äôs instructions.,Total RNA was purified from -/+ PMA-treated THP-1 cells using Direct-zol RNA MiniPrep Kit (Zymo Research) and TRIzol reagent (Ambion) according to the manufacturer‚Äôs instructions.,Total RNA was purified from -/+ PMA-treated THP-1 cells using Direct-zol RNA MiniPrep Kit (Zymo Research) and TRIzol reagent (Ambion) according to the manufacturer‚Äôs instructions.,Total RNA was purified from -/+ PMA-treated THP-1 cells using Direct-zol RNA MiniPrep Kit (Zymo Research) and TRIzol reagent (Ambion) according to the manufacturer‚Äôs instructions.
+!Sample_extract_protocol_ch1,"Total RNA was used to generate libraries using a NEXTflex Rapid Directional RNA-Seq kit (Bioo Scientific, $5138-07) according to the manufacturer‚Äôs instructions. Samples were quality assessed using Bioanalyzer (Agilent, Santa Clara, CA) and read on a High-Seq System (Illumina, San Diego, CA.","Total RNA was used to generate libraries using a NEXTflex Rapid Directional RNA-Seq kit (Bioo Scientific, $5138-07) according to the manufacturer‚Äôs instructions. Samples were quality assessed using Bioanalyzer (Agilent, Santa Clara, CA) and read on a High-Seq System (Illumina, San Diego, CA.","Total RNA was used to generate libraries using a NEXTflex Rapid Directional RNA-Seq kit (Bioo Scientific, $5138-07) according to the manufacturer‚Äôs instructions. Samples were quality assessed using Bioanalyzer (Agilent, Santa Clara, CA) and read on a High-Seq System (Illumina, San Diego, CA.","Total RNA was used to generate libraries using a NEXTflex Rapid Directional RNA-Seq kit (Bioo Scientific, $5138-07) according to the manufacturer‚Äôs instructions. Samples were quality assessed using Bioanalyzer (Agilent, Santa Clara, CA) and read on a High-Seq System (Illumina, San Diego, CA."
+!Sample_taxid_ch1,9606,9606,9606,9606
+!Sample_data_processing,"All samples were sequenced together on an Illumina HiSeq system (single-end, 50bp), and sequencing reads were mapped to hg19 using STAR. For analysis of differential genes, STAR outputs were processed using DESeq2.","All samples were sequenced together on an Illumina HiSeq system (single-end, 50bp), and sequencing reads were mapped to hg19 using STAR. For analysis of differential genes, STAR outputs were processed using DESeq2.","All samples were sequenced together on an Illumina HiSeq system (single-end, 50bp), and sequencing reads were mapped to hg19 using STAR. For analysis of differential genes, STAR outputs were processed using DESeq2.","All samples were sequenced together on an Illumina HiSeq system (single-end, 50bp), and sequencing reads were mapped to hg19 using STAR. For analysis of differential genes, STAR outputs were processed using DESeq2."
+!Sample_data_processing,Genome_build: hg19,Genome_build: hg19,Genome_build: hg19,Genome_build: hg19
+!Sample_data_processing,Supplementary_files_format_and_content: deseq output text file,Supplementary_files_format_and_content: deseq output text file,Supplementary_files_format_and_content: deseq output text file,Supplementary_files_format_and_content: deseq output text file
+!Sample_platform_id,GPL20301,GPL20301,GPL20301,GPL20301
+!Sample_contact_name,"Susan,,Carpenter","Susan,,Carpenter","Susan,,Carpenter","Susan,,Carpenter"
+!Sample_contact_laboratory,Carpenter,Carpenter,Carpenter,Carpenter
+!Sample_contact_department,MCD Biology,MCD Biology,MCD Biology,MCD Biology
+!Sample_contact_institute,UC Santa Cruz,UC Santa Cruz,UC Santa Cruz,UC Santa Cruz
+!Sample_contact_address,1156 High St,1156 High St,1156 High St,1156 High St
+!Sample_contact_city,Santa Cruz,Santa Cruz,Santa Cruz,Santa Cruz
+!Sample_contact_state,CA,CA,CA,CA
+!Sample_contact_zip/postal_code,95050,95050,95050,95050
+!Sample_contact_country,USA,USA,USA,USA
+!Sample_data_row_count,0,0,0,0
+!Sample_instrument_model,Illumina HiSeq 4000,Illumina HiSeq 4000,Illumina HiSeq 4000,Illumina HiSeq 4000
+!Sample_library_selection,cDNA,cDNA,cDNA,cDNA
+!Sample_library_source,transcriptomic,transcriptomic,transcriptomic,transcriptomic
+!Sample_library_strategy,RNA-Seq,RNA-Seq,RNA-Seq,RNA-Seq
+!Sample_relation,BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN14924194,BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN14924193,BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN14924192,BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN14924191
+!Sample_relation,SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX8342320,SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX8342321,SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX8342322,SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX8342323
+!Sample_supplementary_file_1,NONE,NONE,NONE,NONE
+!series_matrix_table_begin,,,,
+ID_REF,GSM4552489,GSM4552490,GSM4552491,GSM4552492
+!series_matrix_table_end,,,,
