@@ -4,7 +4,7 @@ import seaborn as sns
 import anndata as ad
 import scanpy as sc
 
-### Plotting with scanpy heatmap function - Updated
+### Plotting with scanpy heatmap function
 def scanpy_matrixplot(
     adata: ad.AnnData,
     groupby: str = "group",
@@ -18,15 +18,12 @@ def scanpy_matrixplot(
     n_genes = len(genes)
     n_groups = adata.obs[groupby].nunique()
 
-    # Dynamic sizing:
-    # - width grows with number of genes
-    # - height stays reasonable even for few groups
     if figsize is None:
-        width = max(8, min(int(0.35 * n_genes + 3), 30))
-        height = max(2.8, min(int(0.55 * n_groups + 1.5), 12))
+        width = max(8, min(int(0.35 * n_genes + 3), 27))
+        height = max(5, min(int(0.55 * n_groups + 1.5), 12))
         figsize = (width, height)
 
-    sc.set_figure_params(fontsize=10, dpi_save=300)
+    sc.set_figure_params(fontsize=12, dpi_save=300)
 
     mp = sc.pl.matrixplot(
         adata,
@@ -40,17 +37,15 @@ def scanpy_matrixplot(
         colorbar_title="Mean expression\nin group",
     )
 
-    # Build the figure so axes exist
     mp.make_figure()
 
-    # Try to improve tick label readability
     main_ax = mp.ax_dict.get("mainplot_ax", None)
     if main_ax is not None:
-        main_ax.tick_params(axis="x", labelrotation=90, labelsize=8)
-        main_ax.tick_params(axis="y", labelsize=9)
+        main_ax.tick_params(axis="x", labelrotation=90, labelsize=12)
+        main_ax.tick_params(axis="y", labelsize=12)
 
     if save is not None:
-        plt.savefig(save, bbox_inches="tight", dpi=300)
+        plt.savefig(save, bbox_inches="tight", dpi=500)
 
     plt.show()
 

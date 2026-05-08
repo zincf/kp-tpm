@@ -3,13 +3,13 @@ from data_concatenation.analysis import utils, graphing
 ### Concatenation and plotting from utils.py and graphing.py
 class Analysis:
 
-    def __init__(self, expression, annotation, matrix, mapping):
+    def __init__(self, expression, annotation, matrix, mapping, succession):
 
         self.expression = expression
         self.annotation = annotation
         self.matrix = matrix
         self.mapping = mapping
-        # self.GEO = GEO
+        self.succession = succession
 
     def run_analysis_and_plotting(self):
 
@@ -23,7 +23,7 @@ class Analysis:
         filtered_expression = utils.filtered_expression(expression=expression_processed_mean)
 
         # Processing of expression dataframe for plotting
-        renamed_expression = utils.rename_groups(filtered_expression, mapping = self.mapping)
+        renamed_expression = utils.rename_groups(expression = filtered_expression, mapping = self.mapping, succession = self.succession)
         ad_expression = utils.dataframe_to_anndata(expression=renamed_expression)
 
         # Plotting scanpy matrixplot

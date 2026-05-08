@@ -90,24 +90,27 @@ def filtered_expression(expression: pd.DataFrame) -> pd.DataFrame:
     expression_filtered_str = expression.loc[ordered_genes_present]
     expression_filtered_float = expression_filtered_str.apply(pd.to_numeric, errors="coerce")
 
-    # Quality check
-    # expression_filtered_float.to_csv("Expression_Filtered.csv")
-    # print("expression_processed_float")
-    # print(expression_filtered_float)
-
     # Print df.column for labelling
-    print(expression_filtered_float.columns.values)
+    # print(expression_filtered_float.columns.values)
 
     return expression_filtered_float
 
 ### Rename groups in filtered expression dataframe for plotting purposes
 '''
 Input: Filtered expression dataframe
-Output: Renamed expression dataframe from dict.py
+Output: Renamed expression dataframe from dict.py and export dataframe as a csv file.
 '''
-def rename_groups(expression: pd.DataFrame, mapping: dict) -> pd.DataFrame:
+def rename_groups(expression: pd.DataFrame, mapping: dict, succession: str) -> pd.DataFrame:
+
     expression = expression.copy()
+    ordered_original = [col for col in mapping if col in expression.columns]
+    remaining_original = [col for col in expression.columns if col not in mapping]
+    expression = expression[ordered_original + remaining_original]
     expression.columns = [mapping.get(col, col) for col in expression.columns]
+
+    # Export dataframe as csv
+    # expression.to_csv(f'{succession}.csv')
+
     return expression
 
 ### Convert filtered expression dataframe to anndata for plotting purposes
